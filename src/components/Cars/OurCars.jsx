@@ -42,19 +42,22 @@ const OurCars = () => {
   ];
 
   return (
-    <div className=" container pt-24">
+    <div className="relative pb-20">
+      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      <div className="container pt-24">
+      {/* Background Layer */}
+
       <div>
-        <h1 className=" font-bold text-4xl text-center">
-          Our <span className=" text-primary">Cars</span>
+        <h1 className="font-bold text-4xl text-center">
+          Our <span className="text-primary">Cars</span>
         </h1>
       </div>
 
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
         {carsData.map((item) => {
           return (
-            <div>
+            <div key={item.id}>
               <CarsCard
-                key={item.id}
                 img={item.img}
                 name={item.name}
                 price={item.price}
@@ -63,6 +66,7 @@ const OurCars = () => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };

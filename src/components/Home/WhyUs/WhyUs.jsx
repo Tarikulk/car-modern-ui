@@ -4,10 +4,10 @@ import { SiWebmoney } from "react-icons/si";
 import { FaUsers, FaShippingFast } from "react-icons/fa";
 
 const WhyUs = () => {
-  const icon1 = <SiWebmoney className=" text-green-500 mx-auto" size={48} />;
-  const icon2 = <FaUsers className=" text-green-500 mx-auto" size={48} />;
+  const icon1 = <SiWebmoney className=" text-primary mx-auto" size={48} />;
+  const icon2 = <FaUsers className=" text-primary mx-auto" size={48} />;
   const icon3 = (
-    <FaShippingFast className=" text-green-500 mx-auto" size={48} />
+    <FaShippingFast className=" text-primary mx-auto" size={48} />
   );
 
   return (
